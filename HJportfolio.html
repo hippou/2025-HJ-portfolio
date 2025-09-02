@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>백엔드 개발자 | 유현지 portfolio</title>
-  <link rel="icon" href="/HJportfolio/images/favicon.ico">
+  <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
   <!-- 폰트 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +12,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
   <!-- 구글머티리얼 -->
    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-  <!--css-->
+  <!-- ScrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <!--css-->
   <link rel="stylesheet" href="css/hjmain.css">
   <!-- js -->
   <script defer src="js/hjmain.js"></script>
@@ -23,10 +25,10 @@
    <Header class="header-container">
     <nav class="nav-container">
       <ul>
-        <li><a href="#ABOUT">ABOUT</a></li>
-        <li><a href="#SKILL">SKILL</a></li>
-        <li><a href="#PROJECT">PROJECT</a></li>
-        <li><a href="#CONTACT">CONTACT</a></li>
+        <li><a href="#ABOUT" class="about">ABOUT</a></li>
+        <li><a href="#SKILL" class="skill">SKILL</a></li>
+        <li><a href="#PROJECT" class="project">PROJECT</a></li>
+        <li><a href="#CONTACT" class="contact">CONTACT</a></li>
       </ul>
     </nav>
   </Header>
@@ -34,33 +36,83 @@
 <!-- visual -->
  <div class="main-line-wrapper">
   <div class="main-line">
-    Hi, I am HyunJi!
+    <span class="animate-typing" style="animation-delay: 0.2s;" >Hi,</span>
+    <span class="animate-typing" style="animation-delay: 0.4s;">I</span>
+    <span class="animate-typing" style="animation-delay: 0.6s;">am</span>
+    <span class="animate-typing" style="animation-delay: 0.8s;">HyunJi!</span>  
   </div>
   </div>
 
   <div class="main-image-wrapper">
-    <button type="button" class="main-btn">Click Me!!!</button>
-      <img src="images/mainimage.png" alt="이미지">
+    <a href="#ABOUT" class="main-btn animate-shaking" style="animation-delay:0.9s; display: inline-block;"> Click Me!!!</a>
+   
+    <img src="images/mainimage.png" alt="이미지">
   </div>
  </section>
 
 
 
-  <section id="ABOUT" class="main-box">
+  <section id="ABOUT" class="main-box scroll-spy">
   <!-- visual -->
-  <div class="visual">
-    <div class="text-box">
-      <p class="side-first-line font-EN">
-        Professional Back-End Developer
-      </p>
-      <div class="text-box-line"></div>
-      <p class="main-first-line">
-       안녕하세요<br> 벡앤드 개발자 유현지 입니다.
-      </p>
-      <p class="introduction">
-       새로운 기술을 배움에 있어 주저하지 않고 열정적인 태도로
-       한단계 한단계 개발자의 길을 가고 있습니다.
-      </p>
+  <div class="ABOUT-box">
+    <div class="Main-text-box">
+      <div class="text-box1">
+        <div class="side-first-line font-EN">
+         Professional Back-End Developer
+        </div>
+        <div class="text-box-line"></div>
+        <div class="main-first-line">
+         안녕하세요<br> 벡앤드 개발자 
+         <span class="name animate-drop" style="animation-delay: 0.2s;">유</span><span class="name animate-drop" style="animation-delay: 0.4s;">현</span><span class="name animate-drop" style="animation-delay: 0.6s;">지</span>
+         입니다.
+        </div>
+        <div class="introduction">
+        새로운 기술을 배움에 있어 주저하지 않고 열정적인 태도로
+        한단계 한단계 개발자의 길을 가고 있습니다.
+        </div>
+      </div>
+      <div class="text-box2">
+       <div class="text-box2-1">
+        <div class="IdentityInfo">
+          <h4>IDENTITY INFO</h4>
+          <ul>
+            <li>이름:유현지</li>
+            <li>생년월일:00.00.00</li>
+          </ul>
+        </div>
+        <div class="education">
+          <h4 class="line">EDUCATION</h4>
+          <ul>
+            <li>09.10~13.04 00고등학교</li>
+            <li>14.04~18.05 00대학교</li>
+          </ul>
+        </div>
+        <div class="Achievements">
+          <h4 class="line">ACHIEVEMENTS</h4>
+          <ul>
+            <li>12.03~15.05 가나다</li>
+            <li>16.04~18.04 라마바</li>
+            <li>20.03~23.03 사아자</li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-box2-2">
+        <div class="career">
+          <h4>CAREER</h4>
+          <ul>
+            <li>12.03~15.05 가나다</li>
+            <li>position:000</li>
+            <li>ㄴ00를통한00달성</li>
+            <li>16.04~18.04 라마바</li>
+            <li>position:000</li>
+            <li>ㄴ00를통한00달성</li>
+            <li>50.50~49.30 사아자</li>
+            <li>position:000</li>
+            <li>ㄴ00를통한00달성</li>
+          </ul>
+        </div>
+      </div>
+    </div>      
     </div>
     <div class="img-box">
       <img src="https://plus.unsplash.com/premium_photo-1664203067979-47448934fd97?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JUVDJTgyJUFDJUVCJTlFJThDJTIwJUVDJTk2JUJDJUVBJUI1JUI0fGVufDB8fDB8fHww" alt="흑백" class="img-human">
@@ -68,7 +120,50 @@
   </div>   
 </section>
 
-<div></div>
+<section id="skill" class="main-box scroll-spy">
+ <div class="inner">
+  <h2 class="title"> SKILL </h2>
+  <ul class="skill_list">
+    <li>
+      <h3>Java</h3>
+      <h4>Java<br>Programming</h4>
+      <ul>
+        <li>객체지향</li>
+        <li>파일 입출력</li>
+        <li>JDBC</li>
+      </ul>
+    </li>
+    <li>
+      <h3>HTML</h3>
+      <h4>HTML5</h4>
+      <Ul>
+        <li>웹페이지 구조 설계</li>
+        <li>시맨틱 태그</li>
+      </Ul>
+    </li>
+    <li>
+      <h3>Js</h3>
+      <h4>JavaScript</h4>
+      <ul>
+        <li>DOM조작,제어</li>
+        <li>이벤트 처리</li>
+        <li>비동기 통신</li>
+      </ul>
+    </li>
+    <li>
+      <ul>
+        <li>SPA 개발</li>
+        <li>전역 상태 관리</li>
+        <li>클라이언트 라우팅</li>
+        <li>CSR 방식 앱개발</li>
+      </ul>
+    </li>
+  </ul>
+
+
+ </div>
+
+</section>
 
 </body>
 </html>
