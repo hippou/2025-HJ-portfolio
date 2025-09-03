@@ -12,14 +12,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
   <!-- 구글머티리얼 -->
    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  
+   <!--swiper css  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!--css-->
+  <link rel="stylesheet" href="css/hjmain.css">
+
   <!-- ScrollMagic -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   <!--css-->
-  <link rel="stylesheet" href="css/hjmain.css">
+  <!-- swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- js -->
   <script defer src="js/hjmain.js"></script>
 </head>
 <body>
+<div class="scroll">
  <section id="main" class="main-box">
  <!-- Header -->
    <Header class="header-container">
@@ -151,19 +158,116 @@
       </ul>
     </li>
     <li>
+      <h3>CSS</h3>
+      <h4>CSS3</h4>
       <ul>
-        <li>SPA 개발</li>
+        <li>웹페이지 레이아웃 설계</li>
+        <li>웹페이지 디자인</li>
+        <li>반응형 제작</li>
+      </ul>
+    </li>
+    <li>
+      <h3>React</h3>
+      <h4>ReactJS</h4>
+      <ul>
+        <li>SPA개발</li>
         <li>전역 상태 관리</li>
         <li>클라이언트 라우팅</li>
         <li>CSR 방식 앱개발</li>
       </ul>
     </li>
   </ul>
+  </div>
+</section>
+
+<section id="project" class="main-box project">
+  <div class="inner">
+    <h2 class="title">PROJECT</h2>
+    <div class="port">
+      <div class="port_img">
+        <!--슬라이드 -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/cat1.jpg" alt="고양이1">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/cat2.jpg" alt="고양이2">
+            </div>
+            
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+      <!-- 텍스트 -->
+        <div class="port__text">
+          <h3>프로젝트명</h3>
+          <ul>
+            <li><span>주요 기능 : </span>주요 기능 설명</li>
+            <li><span>적용 기술 : </span>HTML, CSS, JS, React, Java, Spring Boot</li>
+            <li><span>GitHub : </span>깃허브 주소</li>
+            <li><span>URL : </span>배포 주소</li>
+          </ul>
+          <div class="btn-group">
+            <a href="javascript:void(0)" class="btn btn-modal">README</a>
+            <a href="javascript:void(0)" class="btn btn--brown btn-modal-image" data-image-src="images/work_1.jpg">이미지</a>
+          </div>
+        </div>
+      </div>
 
 
- </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!-- scroll To Top -->
+ <div id="toTop">
+  <a href="#">
+    <span class="material-symbols-outlined">keyboard_control_key </span>
+  </a>
+ </div>
+
+
+
+
 
 </body>
 </html>

@@ -12,15 +12,6 @@ spyEls.forEach(function (spyEl) {
   .addTo(controller); // 컨트롤러에 장면을 할당(필수!)
 });
 
-
-
-
-
-
-
-
-
-
 //click me  버튼 눌렀을때 애니메이션 추가 
 const shaking = document.querySelector(".main-btn"); 
 const namelists = document.querySelectorAll(".name");
@@ -46,3 +37,44 @@ about.addEventListener('click',function(){
   });
 })
 
+
+// swiper
+const swiper = new Swiper('.project .swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.project .swiper-button-next',
+    prevEl: '.project .swiper-button-prev',
+  },
+
+});
+
+
+//페이지 최상단으로 이동 
+const topBtn = document.querySelector('#toTop');
+const scrollContainer = document.querySelector('.scroll');
+
+scrollContainer.addEventListener('scroll', function () {
+  console.log('스크롤 감지됨', scrollContainer.scrollTop);
+
+  if (scrollContainer.scrollTop > 80) {
+    topBtn.style.opacity = '1';
+    topBtn.style.transform = 'translateX(0)';
+  } else {
+    topBtn.style.opacity = '0';
+    topBtn.style.transform = 'translateX(100px)';
+  }
+});
+
+topBtn.addEventListener('click', function (e) {
+  e.preventDefault(); // <a href="#">의 기본 동작 방지
+  scrollContainer.scrollTo({ top: 0, behavior: 'smooth' });
+});
