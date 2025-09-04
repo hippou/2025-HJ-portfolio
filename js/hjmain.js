@@ -39,20 +39,22 @@ about.addEventListener('click',function(){
 
 
 // swiper
-const swiper = new Swiper('.project .swiper', {
+const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
+  
 
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable:true,
   },
 
   // Navigation arrows
   navigation: {
-    nextEl: '.project .swiper-button-next',
-    prevEl: '.project .swiper-button-prev',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 
 });

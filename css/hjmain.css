@@ -298,7 +298,6 @@ html, body {
   margin-bottom: 20px;
 }
 
-
 .img-box{
   width:40%;
   height:100%;
@@ -405,57 +404,73 @@ html, body {
 }
 
 /* [project] */
-.project .port {
+.project .inner{
+  width:100%;
+  height:100%;
+}
+
+.port {
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.port .port_img {
+  width:50%;
+  height:100%;
+}
+.port .port_text{
+  width:50%; 
+  height:100%;
+}
+
+.swiper{
+  width:80%;
+  height:100%;
+}
+
+.swiper-wrapper .swiper-slide {
   width:100%;
   height:100%;
   display: flex;
-  margin: 20px 0;
-
+  justify-content: center;
+  align-items: center;
 }
 
-.project .port .port__img,
-.project .port .port__text {
-  width: 50%;
-  height: 400px;
-}
-
-
-.project .port .port__img .swiper {
+.swiper-slide img{
   width: 100%;
-  height: 100%;
-}
-
-.project .port .port__img .swiper img {
-  width: 100%;
-  height: 100%;
+  height:100%;
   object-fit: contain;
-  /* object-fit: cover; */
+  display: inline-block;
 }
-.project .port .port__text {
-  padding: 30px;
-  font-size: 14px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+
+.swiper-pagination-bullet {
+  background: black; 
+  opacity: 0.5; 
 }
-.project .port .port__text h3 {
-  font-size: 20px;
-  font-weight: 800;
+
+.swiper-pagination-bullet:hover {
+  background: black; 
+  opacity: 1; 
 }
-.project .port .port__text li {
-  line-height: 1.8;
+
+.swiper-button-prev,
+.swiper-button-next {
+  color:rgb(77, 74, 74); /* 화살표 색상 */
+  width: 10px;  /* 버튼 너비 */
+  height: 5px; /* 버튼 높이 */
+  border-radius: 20px; /* 둥근 모서리 */
+  font-weight:bolder;
 }
-.project .port .port__text li span {
-  font-weight: bold;
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover{
+  color:#9b9898;
 }
-.project .port .btn-group {
-  display: flex;
-  /* column-gap: 40px; */
-}
-/* 또는 */
-.project .port .btn-group .btn:first-child {
-  margin-right: 40px;
-}
+
+
 
 
 
