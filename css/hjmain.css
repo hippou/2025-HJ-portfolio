@@ -75,6 +75,7 @@ html, body {
   position:relative;
   margin:0 auto;
   margin-bottom: 8px;
+  padding:40px 0;
 }
 
 /* [MainPage] */
@@ -144,34 +145,40 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
-
 }
 
 .main-image-wrapper .main-btn{
-  width:300px;
-  height:auto;
-  font-size: large;
+  width:200px;
+  height:90px;
+  font-size: 30px;
   font-weight: 600;
   border: 2px solid rgb(45, 45, 45);
   border-radius: 10px;
   transition:0.7s;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 
 }
 
 .main-image-wrapper .animate-shaking {
   animation-name: shaking;
-  animation-duration: 1.6s;
-  animation-iteration-count: 1;
+  animation-duration: 0.8s;
+  animation-iteration-count: 2;
 }
 
 @keyframes shaking { 
-  0% {transform:skewX(0px)};
-  25% {transform:skewX(-15px)};
-  50% {transform:skewX(15px)};
-  75% {transform:skewX(-15px)};
-  100% {transform:skewX(0px)}; 
+  0% {transform:rotate(0);}
+  15% {transform:rotate(-10deg);}
+  25% {transform:rotate(10deg);}
+  35% {transform:rotate(-10deg);}
+  45% {transform:rotate(10deg);}
+  55% {transform:rotate(-10deg);}
+  65% {transform:rotate(10deg);}
+  75% {transform:rotate(-10deg);}
+  85% {transform:rotate(10deg);}
+  100% {transform:rotate(0);}
 }
 
 .main-image-wrapper .main-btn:hover{
